@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.containerLogIn {
+  display: inline-block;
+  margin: 13rem 25rem;
+  padding: 2rem 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #555;
+}
+.containerLogOut {
+  display: inline-block;
+  margin: 13rem 25rem;
+  padding: 2rem 0;
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #555;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
+  /* Put transition on an original "state" */
+  /* transition: background-color 0.3s; */
+  transition: all 0.3s;
+}
+
+.btn-log-in:hover {
+  background-color: green;
+  transition: 0.7s;
+}
+.btn-log-out:hover {
+  background-color: red;
+  transition: 0.7s;
+}
+
+.hidden {
+  display: none;
+}
+
+.welcome {
+  font-size: 2rem;
+}
